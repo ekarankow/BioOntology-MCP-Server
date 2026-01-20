@@ -1,0 +1,8 @@
+services:
+  bioontology-server:
+    build: .
+    image: bioontology-server:latest
+    environment:
+      BIOONTOLOGY_API_KEY: ${BIOONTOLOGY_API_KEY}
+    stdin_open: true
+    tty: true
